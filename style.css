@@ -255,3 +255,66 @@ nav {
 .role__image img {
 	max-width: 5.5rem;
 }
+
+.testimonials {
+	background-color: var(--dark-clr);
+	padding: var(--section-pad) 0;
+}
+
+.testimonials__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-top: 3rem;
+	margin-bottom: 1rem;
+}
+
+.testimonials__card {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+
+.testimonials__card__content {
+	width: 500px;
+}
+
+.testimonials__card__image {
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	object-fit: cover;
+	border-radius: var(--br);
+}
+
+.testimonials__card__image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.testimonials__name {
+	font-family: var(--subtitle-ff);
+	font-size: var(--subtitle-fs);
+	font-style: italic;
+	color: var(--accent-clr);
+	margin-bottom: 0.5rem;
+}
+
+.testimonials__text {
+	font-family: var(--text-ff);
+	font-size: var(--subtitle-fs);
+	color: var(--light-clr);
+	font-style: italic;
+}
+
+.slider-btn {
+	color: var(--accent-clr);
+	font-size: var(--title-fs);
+	cursor: pointer;
+	transition: color 0.2s;
+}
+
+.slider-btn:hover {
+	color: var(--light-clr);
+}
