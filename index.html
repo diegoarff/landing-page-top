@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>🎮 Valorant Landing Page</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+		<link rel="stylesheet" href="style.css" />
+
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<div class="logo">VALORANT</div>
+			<nav class="navbar">
+				<ul class="navbar__links">
+					<li class="navbar__link">
+						<a href="#">About</a>
+					</li>
+					<li class="navbar__link">
+						<a href="#">Roles</a>
+					</li>
+					<li class="navbar__link">
+						<a href="#">Testimonials</a>
+					</li>
+					<li class="navbar__link">
+						<a href="#">Play Now</a>
+					</li>
+					<li><i class="fa-solid fa-music music_btn"></i></li>
+					<!-- change to fa-music-slash for muted form -->
+				</ul>
+			</nav>
+		</header>
+		<main class="hero">
+			<video></video>
+			<div class="hero__content">
+				<h3 class="subtitle">ABOUT</h3>
+				<h1 class="title">
+					PLAY THE MOST POPULAR GAME OF THE RECENT TIMES
+				</h1>
+				<p class="text">
+					VALORANT, tactical FPS where precise gunplay meets unique
+					agent abilities. Outwit, outplay, and outshine your
+					competition with tactical abilities, precise gunplay, and
+					adaptive teamwork.
+				</p>
+				<div class="hero__btns">
+					<button class="btn btn--primary">PLAY NOW</button>
+					<button class="btn btn--secondary">WATCH TRAILER</button>
+				</div>
+			</div>
+			<div class="hero__image">
+				<img
+					src="assets/main-wallpaper.jpg"
+					alt="Valorant Agents standing in front of Valorant logo" />
+			</div>
+		</main>
+		<section class="roles">
+			<h3 class="subtitle">ROLES</h3>
+			<h1 class="title">KNOW THE IN-GAME ROLES</h1>
+			<div class="roles__container">
+				<div class="roles__card">
+					<h3 class="subtitle">DUELIST</h3>
+					<div class="roles__card__content">
+						<div class="role__image">
+							<img
+								src="assets/DuelistClassSymbol.webp"
+								alt="Duelist Role" />
+						</div>
+						<div class="role__text">
+							Duelist are self-sufficient fraggers who their team
+							expects, through abilities and skills, to get high
+							frags and seek out engagements first.
+						</div>
+					</div>
+				</div>
+				<div class="roles__card">
+					<h3 class="subtitle">INITIATOR</h3>
+					<div class="roles__card__content">
+						<div class="role__image">
+							<img
+								src="assets/InitiatorClassSymbol.webp"
+								alt="Initiator Role" />
+						</div>
+						<div class="role__text">
+							Initiators challenge angles by setting up their team
+							to enter contested ground and push defenders away.
+						</div>
+					</div>
+				</div>
+				<div class="roles__card">
+					<h3 class="subtitle">SENTINEL</h3>
+					<div class="roles__card__content">
+						<div class="role__image">
+							<img
+								src="assets/SentinelClassSymbol.webp"
+								alt="Sentinel Role" />
+						</div>
+						<div class="role__text">
+							Sentinels are defensive experts who can lock down
+							areas and watch flanks, both on attacker and
+							defender rounds.
+						</div>
+					</div>
+				</div>
+				<div class="roles__card">
+					<h3 class="subtitle">CONTROLLER</h3>
+					<div class="roles__card__content">
+						<div class="role__image">
+							<img
+								src="assets/ControllerClassSymbol.webp"
+								alt="Controller Role" />
+						</div>
+						<div class="role__text">
+							Controllers are experts in slicing up dangerous
+							territory to set their team up for success.
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="testimonials"></section>
+		<section class="cta"></section>
+		<footer></footer>
+	</body>
+</html>
