@@ -16,7 +16,7 @@
 	--subtitle-fs: 1.25rem;
 	--text-fs: 1.125rem;
 
-	--section-pad: 4.6rem;
+	--section-pad: 4rem;
 
 	--br: 5px;
 }
@@ -48,6 +48,7 @@ header {
 	top: 0;
 	left: 0;
 	width: 100%;
+	z-index: 10;
 }
 
 .container {
@@ -82,15 +83,27 @@ header {
 	border-radius: var(--br);
 	border: none;
 	cursor: pointer;
+	font-family: var(--subtitle-ff);
 }
 
 .btn--primary {
 	background-color: var(--accent-clr);
+	transition: filter 0.3s;
+}
+
+.btn--primary:hover {
+	filter: brightness(0.9) saturate(1.5);
 }
 
 .btn--secondary {
 	background: none;
 	border: 1px solid var(--light-clr);
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.btn--secondary:hover {
+	background-color: var(--light-clr);
+	color: var(--dark-clr);
 }
 
 nav {
@@ -159,6 +172,7 @@ nav {
 
 .hero__image {
 	flex: 1;
+	position: relative;
 }
 
 .hero__image img {
@@ -166,7 +180,78 @@ nav {
 	object-fit: cover;
 }
 
+.hero__image::before {
+	content: '';
+	position: absolute;
+	top: -20px;
+	width: 10px;
+	aspect-ratio: 1/1;
+	background-color: var(--accent-clr);
+
+	box-shadow: 40px 0 var(--accent-clr);
+}
+
+.hero__image::after {
+	content: '';
+	position: absolute;
+	bottom: -10px;
+	right: 0;
+	width: 100px;
+	height: 3px;
+	background-color: var(--accent-clr);
+}
+
 .hero__btns {
 	display: flex;
 	gap: 1rem;
+}
+
+.roles {
+	--text-fs: 1rem;
+
+	background-color: var(--light-clr);
+	padding: var(--section-pad) 0;
+}
+
+.roles .title {
+	color: var(--accent-clr);
+}
+
+.roles .container > .subtitle,
+.roles .text {
+	color: var(--dark-clr);
+}
+
+.roles .text {
+	margin: 0;
+	padding: 0.75rem 0.75rem 0.75rem 1rem;
+}
+
+.roles__container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4rem;
+	justify-content: center;
+	margin-top: 2rem;
+}
+
+.roles__card {
+	width: 550px;
+}
+
+.roles__card__content {
+	display: flex;
+	align-items: center;
+	background-color: var(--medium-clr);
+	border-radius: var(--br);
+}
+
+.role__image {
+	padding: 0.75rem;
+	background-color: var(--dark-clr);
+	border-left: 4px solid var(--accent-clr);
+}
+
+.role__image img {
+	max-width: 5.5rem;
 }
