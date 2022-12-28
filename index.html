@@ -14,9 +14,9 @@
 	</head>
 	<body>
 		<header>
-			<div class="logo">VALORANT</div>
-			<nav class="navbar">
-				<ul class="navbar__links">
+			<nav class="container">
+				<div class="logo">VALORANT</div>
+				<ul class="navbar">
 					<li class="navbar__link">
 						<a href="#">About</a>
 					</li>
@@ -29,13 +29,15 @@
 					<li class="navbar__link">
 						<a href="#">Play Now</a>
 					</li>
-					<li><i class="fa-solid fa-music music_btn"></i></li>
+					<li><i class="fa-solid fa-music" id="music_btn"></i></li>
 					<!-- change to fa-music-slash for muted form -->
 				</ul>
 			</nav>
 		</header>
-		<main class="hero">
-			<video></video>
+		<main class="hero container">
+			<video id="bg-video" muted autoplay loop>
+				<source src="assets/video-wallpaper2.mp4" type="video/mp4" />
+			</video>
 			<div class="hero__content">
 				<h3 class="subtitle">ABOUT</h3>
 				<h1 class="title">
