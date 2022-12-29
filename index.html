@@ -18,23 +18,23 @@
 				<div class="logo">VALORANT</div>
 				<ul class="navbar">
 					<li class="navbar__link">
-						<a href="#">About</a>
+						<a href="#hero">About</a>
 					</li>
 					<li class="navbar__link">
-						<a href="#">Roles</a>
+						<a href="#roles">Roles</a>
 					</li>
 					<li class="navbar__link">
-						<a href="#">Testimonials</a>
+						<a href="#testimonials">Testimonials</a>
 					</li>
 					<li class="navbar__link">
-						<a href="#">Play Now</a>
+						<a href="#cta">Play Now</a>
 					</li>
 					<li><i class="fa-solid fa-music" id="music_btn"></i></li>
 					<!-- change to fa-music-slash for muted form -->
 				</ul>
 			</nav>
 		</header>
-		<main class="hero container">
+		<main class="hero container" id="hero">
 			<video id="bg-video" muted autoplay loop>
 				<source src="assets/video-wallpaper2.mp4" type="video/mp4" />
 			</video>
@@ -60,7 +60,7 @@
 					alt="Valorant Agents standing in front of Valorant logo" />
 			</div>
 		</main>
-		<section class="roles">
+		<section class="roles" id="roles">
 			<div class="container">
 				<h3 class="subtitle">ROLES</h3>
 				<h1 class="title">KNOW THE IN-GAME ROLES</h1>
@@ -127,7 +127,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="testimonials">
+		<section class="testimonials" id="testimonials">
 			<div class="container">
 				<h3 class="subtitle">TESTIMONIALS</h3>
 				<h1 class="title">SEE WHAT OTHERS THINK</h1>
@@ -148,24 +148,30 @@
 				</div>
 			</div>
 		</section>
-		<section class="cta">
-			<div class="cta__image">
-				<img src="assets/cta-wallpaper.jpg" alt="" />
-			</div>
-			<div class="cta__content">
-				<h3 class="subtitle">PLAY NOW</h3>
-				<h1 class="title">GET INTO THE GAME AND PREPARE TO SHOOT</h1>
-				<p class="text">
-					Charge up your abilities, call your teammates and prepare
-					for the battle! Sign up to the game by clicking in the
-					button below.
-				</p>
-				<button class="btn btn--primary">PLAY NOW</button>
+		<section class="cta" id="cta">
+			<div class="container">
+				<div class="cta__image">
+					<img src="assets/cta-wallpaper.jpg" alt="" />
+				</div>
+				<div class="cta__content">
+					<h3 class="subtitle">PLAY NOW</h3>
+					<h1 class="title">
+						GET INTO THE GAME AND PREPARE TO SHOOT
+					</h1>
+					<p class="text">
+						Charge up your abilities, call your teammates and
+						prepare for the battle! Sign up to the game by clicking
+						in the button below.
+					</p>
+					<button class="btn btn--primary">PLAY NOW</button>
+				</div>
 			</div>
 		</section>
 		<footer>
-			This is a fanmade website, a project for The Odin Project. Videos
-			and images used belong to Riot Games.
+			<div class="container">
+				This is a fanmade website, a project for The Odin Project.
+				Videos and images used belong to Riot Games.
+			</div>
 		</footer>
 	</body>
 </html>
