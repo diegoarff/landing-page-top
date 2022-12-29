@@ -50,8 +50,23 @@ next.addEventListener('click', () => {
 	updateTestimonial();
 });
 
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
 	updateTestimonial();
 });
 
 // MUSIC BUTTON
+
+const musicBtn = document.getElementById('music_btn');
+const musicAudio = document.getElementById('music');
+
+musicBtn.addEventListener('click', () => {
+	if (musicAudio.paused) {
+		musicAudio.play();
+		musicBtn.classList.remove('fa-play');
+		musicBtn.classList.add('fa-pause');
+	} else {
+		musicAudio.pause();
+		musicBtn.classList.remove('fa-pause');
+		musicBtn.classList.add('fa-play');
+	}
+});
